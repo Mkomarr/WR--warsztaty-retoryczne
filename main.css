@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font: 1em/1.5em 'Montserrat', sans-serif;
+    color: #000033;
+}
+
+body img {
+    width: 100%;
+}
+
+body img.arrow {
+    max-width: 94px;
+}
+
+/*--------------- MOBILE FIRST -------------------*/
+
+.container {
+    width: 100%;
+    min-width: 100vw;
+    max-width: 75em;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-gap: 24px;
+}
+
+/*-------------- menu ---------------------*/
+.top-nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    padding: 2.5em 2.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.WR-logo {
+    max-width: 120px;
+    position: relative;
+}
+
+.dropdown-icon {
+    font-size: 2em;
+    display: block;
+}
+
+.top-menu {
+    display: none;
+}
+
+.top-menu-visible {
+    display: block;
+    position: absolute;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #000033;
+    display: inline-block;
+}
+
+nav ul a:hover {
+    background-color: #000033;
+    color: white;
+}
+
+hr {
+   height: 3px;
+   width: 90%;
+   margin: 0 auto;
+   background-color: #000033;
+}
+
+/*------------------ body -----------------*/
+header {
+    margin-top: 8em;
+    position: relative;
+}
+
+.img-right {
+    width: 90vw;
+    height: 90vw;
+}
+
+.say-it {
+    background: center / contain no-repeat url("img/powiedz-to-bardziej-warsztaty-retoryczne-dominik-mazur.png");
+}
+
+main {
+    margin: 0 auto;
+}
+
+/* ----------------retoryka to warsztat----------- */
+
+.about img {
+    max-width: 409px;
+}
+
+/* ---------------- workshop ------------------- */
+
+.button {
+    text-decoration: none;
+    color: #000033;
+}
+
+/* ----------------- why --------------------- */
+
+.why img {
+    max-width: 319px;
+}
+
+/* ---------------- what -------------------- */
+
+.what img {
+    max-width: 550px;
+}
+
+/* ---------------for everyone--------------- */
+
+.for-everyone img {
+    max-width: 408px;
+}
+
+.for-everyone ul {
+    list-style-type: none;
+}
+
+.for-everyone li {
+    padding-left: 1em;
+    display: block;
+}
+
+.for-everyone ul > li:before {
+    content: "\005C";
+    margin: 0 .6em 0 -1em;
+    /* text-indent: 2em each-line; */
+}
+
+.for-everyone ul li {
+    
+}
+
+/* ----------- offer ------------------ */
+
+.offer ul {
+    list-style-type: none;
+}
+
+.offer img {
+    max-width: 550px;
+}
+
+/* ---------- footer ---------------- */
+
+footer img {
+    max-width: 150px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline;
+}
+
+footer ul li {
+    display: inline-block;
+}
