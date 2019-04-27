@@ -5,6 +5,7 @@
   }
 
 body {
+    width: 100%;
     font: 1em/1.5em 'Montserrat', sans-serif;
     color: #000033;
 }
@@ -20,47 +21,80 @@ body img.arrow {
 /*--------------- MOBILE FIRST -------------------*/
 
 .container {
-    width: 100%;
-    min-width: 100vw;
-    max-width: 75em;
+    width: 90vw;
     margin: 0 auto;
     display: grid;
+    position: relative;
+    /* grid-gap: 24px; */
     /* grid-template-columns: repeat(12, 1fr); */
-    grid-gap: 24px;
 }
 
 /*-------------- menu ---------------------*/
+
 .top-nav {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 100;
 }
 
 nav {
-    padding: 2.5em 2.5em 1em;
+    padding: 1.5rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
+    position: relative;
+    width: 100%;
 }
 
 .WR-logo {
     max-width: 120px;
-    position: relative;
 }
+
+/* ---- menu mobile ---- */
 
 .dropdown-icon {
     font-size: 2em;
     display: block;
 }
 
+.top-menu-visible {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 5.2rem;
+    background-color: white;
+    font-size: 1.3rem;
+}
+
+.top-menu-visible li {
+    padding: 1rem;
+}
+
+.top-menu-visible li:first-child {
+    padding-top: 2.5rem;
+}
+
+.line {
+    width: 98%;
+    height: 2px;
+    background-color: #000033;
+    margin: 0 auto;
+}
+
+.top-menu-visible li:last-child {
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+}
+
 .top-menu {
     display: none;
 }
 
-.top-menu-visible {
-    display: block;
-    position: absolute;
-}
+/* ---- menu desktop ---- */
 
 nav ul {
     list-style: none;
@@ -82,36 +116,63 @@ nav ul a:hover {
     color: white;
 }
 
-hr {
+.hr {
    height: 3px;
    width: 90%;
    margin: 0 auto;
    background-color: #000033;
 }
 
-/*------------------ body -----------------*/
+/*------------------ BODY -----------------*/
+
+/* ---------about----------------- */
+main {
+    margin: 0 auto;
+    width: 80vw;
+}
+
 header {
     margin-top: 8em;
     position: relative;
 }
 
 .img-right {
-    width: 90vw;
-    height: 90vw;
+    width: 100%;
+    max-width: 35em;
+    min-height: 20em;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .say-it {
     background: center / contain no-repeat url("img/powiedz-to-bardziej-warsztaty-retoryczne-dominik-mazur.png");
+    position: relative;
 }
 
-main {
-    margin: 0 auto;
+h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 5rem;
+    left: .8em;
 }
+
+.section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+
 
 /* ----------------retoryka to warsztat----------- */
 
 .about img {
     max-width: 409px;
+}
+
+.mobile-hidden {
+    display: none;
 }
 
 /* ---------------- workshop ------------------- */
