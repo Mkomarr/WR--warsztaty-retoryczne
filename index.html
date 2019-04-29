@@ -30,25 +30,28 @@
     <header>
         <h1>Powiedz to <br />bardziej</h1>
         <div class="img-right say-it"></div>
-        <hr class="hr section">
     </header>
+    <hr class="hr section">
 <!-- about -->
 <main>
-    <article class="about">
+    <article>
         <img src="img/arrow-breadcrums.png" class="arrow mobile-hidden">
         <p class="mobile-hidden">>> najbliższe kursy</p>
-        <section>
+     <section class="wr-workshop">
             <img src="img/warsztaty-retoryczne-about.png" class="mobile-hidden">
-            <h2>Retoryka to warsztat</h2>
+            <h2>Retoryka <br />to warsztat</h2>
             <p>Retoryka nie jest sztuką, retoryka jest Warsztatem, którego można się nauczyć. Jak się tego nauczyć? Tylko poprzez doświadczenie. Dlatego Warsztaty Retoryczne są ciągiem nowych wyzwań, nowych doświadczeń, symulacji, konfrontacji i wnikliwego feedbacku. To właśnie poprzez odpowiednie ćwiczenia pokonamy strach przed przemawianiem i publicznością, opanujemy chaos myśli w głowie, nauczymy się wygrywać dyskusje i tłumaczyć się z błędów. To właśnie ten Warsztat sprawi, że Twój głos będzie słyszany i dobrze zapamiętany.</p>
-            <section class="workshop">
-                    <h3>\\\ Najbliższy kurs od 05. 05. 2019</h3>
-                    <h3><a href="#" class="button">zobacz kursy >></a> </h3>
-            </section>
-        </section>
+     </section>
+     <section class="workshop">
+        <p>\\\ Najbliższy kurs od 05. 05. 2019</p>
+        <button class="button">
+            <span>zobacz kursy </span>
+            <span>>></span>
+        </button>
+    </section>
     </article>
 <!-- why -->
-    <article class="why">
+    <article class="why article-set">
         <h2>Po co?</h2>
         <h3>\\\ improwizacja</h3>
         <p>Co zrobić, gdy czasu nie ma, a trzeba przedstawić siebie, produkt, opinię, dane? Trzeba improwizować, ale trzeba wiedzieć jak, aby było to przekonujące, pewnie powiedziane i logiczne.</p>
@@ -56,28 +59,28 @@
         <p>Po prostu nie ma czasu, do rzeczy i konkret. Jak ułożyć myśli i wybrać to, co najważniejsze.</p>
         <h3>\\\ pod presją</h3>
         <p>Łatwo jest rozmawiać przy stole z rodziną, ale w sytuacji jeżeli od tego zależy to czy zdobędziesz klienta, przekonaz do swojej racji albo do siebie, albo możesz wystawić się na pośmiewisko, bądź gdy masz przed sobą tłum ludzi z negatywnym nastawieniem a szef chce konkretu, bo nie ma czasu - to jest właśnie ten moment kiedy jest trudno. Warsztaty są o tym, jak sobie w takich sytuacjach radzić.</p>
-        <img src="img/po-co-warsztaty-retoryczne.png">
-        <section>
+        <img src="img/po-co-warsztaty-retoryczne.png" class="mobile-hidden">
+        <section class="contact-us-breadcrumb">
                 <img src="img/arrow-breadcrums.png" class="arrow">
-                <p>>>  napisz do nas</p>
+                <a href="">>>  napisz do nas</a>
         </section>
     </article>
 <!-- what -->
-    <article class="what">
+    <article class="article-set">
         <h2>Autorska formuła warsztatów</h2>
         <h3>\\\ Dominik Mazur \ założyciel</h3>
         <p>Jestem z wykształcenia prawnikiem, specjalistą od kontaktów z mediami. Mam za sobą wiceprezesurę w jednym z największych polskich think tanków - Fundacji Republikańskiej. Prowadzę Warsztaty Retoryczne od 8 lat, pracowałem jako członek zespołów negocjacyjnych, pisałem ustawy jako prawnik legislator w Sejmie RP, inicjowałem i koordynowałem kilkanaście projektów analitycznych (w tym “Kierunki Promocji Polski dla MSZ, “Wolność słowa w Internecie” we współpracy z Google Polska i wiele innych). Prowadziłem szkolenia medialne dla Mediatorów oraz okazjonalnie współpracowałem z TedX Warsaw. Prowadziłem szkolenia dla różnych branży od dziennikarzy, poprzez IT, HR, do kandydatów na stanowiska publiczne oraz przedsiębiorców. Zdarza mi się komentować obecną sytuację polityczną i gospodarczą jako publicysta.</p>
-        <img src="img/warsztaty-retoryczne-dominik-mazur.png">
+        <img src="img/warsztaty-retoryczne-dominik-mazur.png" class="mobile-hidden">
     </article>
 <!-- newsletter -->
-    <article class="newsletter">
-            <input type="text" placeholder="\\\ Podaj swój mail i otrzymuj newslettery z wiedzą"</h3>
-            <h3><a href="#" class="button">dołącz >></a> </h3>
+    <article class="workshop">
+            <input type="text" placeholder="\\\ Podaj swój mail i otrzymuj wiedzę" class="newsletter">
+            <button class="button"><span>zapisz </span><span>>></span></button>
     </article>
 <!-- to whome -->
-    <article class="for-everyone">
+    <article class="for-everyone article-set">
         <h2>Dla kogo?</h2>
-        <img src="img/warsztaty-retoryczne-dla-wszystkich.png">
+        <img src="img/warsztaty-retoryczne-dla-wszystkich.png" class="mobile-hidden">
         <h3>\\\ dla firm</h3>
         <ul>
             <li>jak zadawać pytania, aby się dowiedzieć czego naprawdę potrzebuje klient, oszczędza to czas i pieniądze</li>
@@ -109,43 +112,50 @@
         </ul>
     </article>
 <!-- offer -->
-    <article class="offer">
+    <article class="offer article-set">
         <h2>Oferta</h2>
         <ul>
-                <li>Warsztaty Retoryczne w grupach (max X osób)</li>
-                <li>grupa początkująca</li>
-                <li>grupa zaawansowana</li>
-                <li>grupa otwarta</li>
-                <li>Warsztaty retoryczne dla firm</li>
-                <li>Warsztaty retoryczne dla IT</li>
-                <li>Warsztaty indywidualne</li>
+                <li><a href="">Warsztaty Retoryczne w grupach (max X osób)</a></li>
+                 <ul class="group-lvls">
+                    <li><a href="">grupa początkująca</a></li>
+                    <li><a href="">grupa zaawansowana</a></li>
+                    <li><a href="">grupa otwarta</a></li>
+                 </ul>
+                <li><a href="">Warsztaty retoryczne dla firm</a></li>
+                <li><a href="">Warsztaty retoryczne dla IT</a></li>
+                <li><a href="">Warsztaty indywidualne</a></li>
         </ul>
-        <h3><a href="">Zapisz się</a></h3>
-        <img src="img/arrow-breadcrums.png" class="arrow">
-        <img src="img/oferta-warsztaty-retoryczne.png">
-        <section class="workshop">
-                <h3>\\\ Najbliższy kurs od 05. 05. 2019</h3>
-                <h3><a href="#" class="button">zobacz kursy >></a> </h3>
+        <section class="sign-in">
+         <h3><a href="">Zapisz się</a></h3>
+         <img src="img/arrow-breadcrums.png" class="arrow">
+         <img src="img/oferta-warsztaty-retoryczne.png" class="mobile-hidden">
         </section>
     </article>
+    <section class="workshop">
+        <p>\\\ Najbliższy kurs od 05. 05. 2019</p>
+        <button class="button">
+            <span>zobacz kursy </span>
+            <span>>></span></button>
+    </section>
 <!-- kontakt -->
-    <article class="contact">
+    <article class="article-set">
         <section class="address">
             <h2>Kontakt</h2>
             <p>\ +48 889 073 582 <br />
                 \ kontakt@warsztatyretoryczne.pl<br /><br />
-                \ facebook<br />
-                \ linkedin<br />
-                \ twitter<br />
+                \ <a href="">facebook</a><br />
+                \ <a href="">linkedin</a><br />
+                \ <a href="">twitter</a><br />
             </p>
         </section>
         <section class="form">
             <h2>Napisz do nas</h2>
             <form>
-                <input type="text" placeholder="imię i nazwisko">
-                <input type="text" placeholder="adres e-mail">
-                <input type="text" placeholder="temat">
-                <input type="text" placeholder="treść wiadomości">
+                <input type="text" placeholder="imię i nazwisko"/>
+                <input type="text" placeholder="adres e-mail"/>
+                <input type="text" placeholder="temat"/>
+                <textarea type="text" placeholder="treść wiadomości" rows="5"></textarea>
+                <button class="send">Wyślij</button>
             </form>
         </section>
     </article>
@@ -163,6 +173,7 @@
             <li>li</li>
             <li>tt</li>
         </ul>
+        <p>Copyright © 2019 Warsztaty Retoryczne Dominik Mazur</p>
     </footer>
 
 </div>

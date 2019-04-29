@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: 1em/1.7em 'Montserrat', sans-serif;
   }
 
 body {
-    width: 100%;
-    font: 1em/1.5em 'Montserrat', sans-serif;
     color: #000033;
 }
 
@@ -16,15 +15,17 @@ body img {
 
 body img.arrow {
     max-width: 94px;
+    height: 11px;
 }
 
 /*--------------- MOBILE FIRST -------------------*/
 
 .container {
-    width: 90vw;
+    width: 100%;
     margin: 0 auto;
-    display: grid;
     position: relative;
+    /* display: grid; */
+    /* overflow: hidden; */
     /* grid-gap: 24px; */
     /* grid-template-columns: repeat(12, 1fr); */
 }
@@ -37,6 +38,8 @@ body img.arrow {
     left: 0;
     width: 100%;
     z-index: 100;
+    background-color: white;
+    transition: transform 3s ease-in-out;
 }
 
 nav {
@@ -44,7 +47,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
     position: relative;
     width: 100%;
 }
@@ -64,10 +66,11 @@ nav {
     display: block;
     position: absolute;
     width: 100%;
+    top: 0;
     left: 0;
-    top: 5.2rem;
     background-color: white;
     font-size: 1.3rem;
+    transform: translate(0, 4em);
 }
 
 .top-menu-visible li {
@@ -125,21 +128,21 @@ nav ul a:hover {
 
 /*------------------ BODY -----------------*/
 
-/* ---------about----------------- */
 main {
     margin: 0 auto;
-    width: 80vw;
 }
+
+/* ---------about----------------- */
 
 header {
     margin-top: 8em;
+    width: 95%;
     position: relative;
 }
 
 .img-right {
-    width: 100%;
-    max-width: 35em;
-    min-height: 20em;
+    /* width: 80%; */
+    height: 18em;
     margin: 0 auto;
     padding: 0;
 }
@@ -150,22 +153,39 @@ header {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 4rem;
     position: absolute;
     z-index: 1;
     top: 5rem;
-    left: .8em;
+    left: 1.3rem;
 }
+
+/* dodatkowy styl dla hr */
 
 .section {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin: 5rem auto;
 }
 
-
-
 /* ----------------retoryka to warsztat----------- */
+
+.article-set {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wr-workshop {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.3rem;
+    line-height: 1.2em;
+    padding-bottom: 3rem;
+}
 
 .about img {
     max-width: 409px;
@@ -177,21 +197,89 @@ h1 {
 
 /* ---------------- workshop ------------------- */
 
+.workshop {
+    width: 100%;
+    margin: 4rem 0;
+    background-color: #000033;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.7rem 1.5rem;
+    font-size: 1.4rem;
+}
+
 .button {
+    margin: 2rem auto 0 auto;
+    background-color: #000033;
+    font-size: 1.3rem;
+    color: white;
+    border: 1px solid white;
+    padding: .4em 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:white;
+    color: #000033;
+}
+.button:active {
+    background-color: whitesmoke;
+    color: #000033;
+}
+
+
+/* ----------------- why --------------------- */
+
+h3 {
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.why img {
+    max-width: 319px;
+}
+
+.contact-us-breadcrumb {
+    margin: 2rem 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us-breadcrumb a {
     text-decoration: none;
     color: #000033;
 }
 
-/* ----------------- why --------------------- */
-
-.why img {
-    max-width: 319px;
+.contact-us-breadcrumb a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #000033;
 }
 
 /* ---------------- what -------------------- */
 
 .what img {
     max-width: 550px;
+}
+
+/* --------- newsletter ---------------- */
+
+.newsletter {
+    border: none;
+    background-color: #1f1f4b;
+    padding: .3rem 0;
+    color: white;
+    font-size: 1.3rem;
+    border-bottom: 1px solid white;
+}
+
+.newsletter::placeholder {
+    color: white;
 }
 
 /* ---------------for everyone--------------- */
@@ -202,6 +290,7 @@ h1 {
 
 .for-everyone ul {
     list-style-type: none;
+    margin-left: 2rem;
 }
 
 .for-everyone li {
@@ -215,23 +304,105 @@ h1 {
     /* text-indent: 2em each-line; */
 }
 
-.for-everyone ul li {
-    
-}
-
 /* ----------- offer ------------------ */
 
+.offer {
+    margin-top: 4rem;
+}
+
 .offer ul {
+    margin-top: 1rem;
     list-style-type: none;
+}
+
+.offer ul .group-lvls {
+    margin: 0 0 0 1rem;;
+}
+
+.offer ul a {
+    color: #000033;
+    text-decoration: none;
+}
+
+.offer ul a:hover {
+    color: white;
+    background-color: #000033;
 }
 
 .offer img {
     max-width: 550px;
 }
 
+.sign-in {
+    margin: 2rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-in a {
+    color: #000033;
+}
+
+.sign-in a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #000033;
+}
+
+/* --------- contact ---------------- */
+
+.address {
+    margin-bottom: 4em;
+}
+
+.address a {
+    text-decoration: none;
+    color: #000033;
+}
+
+.form input, textarea {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-bottom: 1px solid #000033;
+    background-color: #e4e4fa;
+    width: 100%;
+    padding: .5rem 0 .2rem 0;
+    margin-bottom: .8rem;
+}
+
+.form input::placeholder, textarea::placeholder {
+    color: #000033;
+}
+
+.send {
+    width: 100%;
+    background-color: #000033;
+    color: white;
+    border: 1px solid #000033;
+    padding: .8em 0;
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: white;
+    color: #000033;
+    border: 1px solid #000033;
+}
+
 /* ---------- footer ---------------- */
 
+footer {
+    width: 100%;
+    margin-top: 4rem;
+    background-color: #000033;
+    color: white;
+    text-align: center;
+}
+
 footer img {
+    margin: 2rem 0;
     max-width: 150px;
 }
 
@@ -241,5 +412,10 @@ footer ul {
 }
 
 footer ul li {
-    display: inline-block;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: .6rem;
+    padding-bottom: 1rem;
 }
