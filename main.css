@@ -52,6 +52,8 @@ nav {
 
 .WR-logo {
     max-width: 120px;
+    position: relative;
+    z-index: 99;
 }
 
 /* ---- menu mobile ---- */
@@ -62,26 +64,27 @@ nav {
 }
 
 .top-menu {
-    display: none;
+    visibility: hidden;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 4em;
     left: 0;
     background-color: white;
     font-size: 1.3rem;
-    transition: 1s ease-in-out;
+    transition: 200ms ease-in;
+    opacity: 0;
 }
 
 .visible {
-    display: block;
-    transform: translateY(4em);
+    visibility: visible;
+    opacity: 1;
 }
 
-.visible li {
+.top-menu li {
     padding: 1rem;
 }
 
-.visible li:first-child {
+.top-menu li:first-child {
     padding-top: 2.5rem;
 }
 
@@ -92,7 +95,7 @@ nav {
     margin: 0 auto;
 }
 
-.visible li:last-child {
+.top-menu li:last-child {
     padding-top: 1.5rem;
     padding-bottom: 0;
 }
@@ -426,4 +429,10 @@ footer ul a:hover {
 footer p {
     font-size: .6rem;
     padding-bottom: 1rem;
+}
+
+/* ---- polityka prywatnosci ---- */
+
+.pp {
+    padding: 1.5rem;
 }
