@@ -39,7 +39,6 @@ body img.arrow {
     width: 100%;
     z-index: 100;
     background-color: white;
-    transition: transform 3s ease-in-out;
 }
 
 nav {
@@ -62,22 +61,27 @@ nav {
     display: block;
 }
 
-.top-menu-visible {
-    display: block;
+.top-menu {
+    display: none;
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     background-color: white;
     font-size: 1.3rem;
-    transform: translate(0, 4em);
+    transition: 1s ease-in-out;
 }
 
-.top-menu-visible li {
+.visible {
+    display: block;
+    transform: translateY(4em);
+}
+
+.visible li {
     padding: 1rem;
 }
 
-.top-menu-visible li:first-child {
+.visible li:first-child {
     padding-top: 2.5rem;
 }
 
@@ -88,13 +92,9 @@ nav {
     margin: 0 auto;
 }
 
-.top-menu-visible li:last-child {
+.visible li:last-child {
     padding-top: 1.5rem;
     padding-bottom: 0;
-}
-
-.top-menu {
-    display: none;
 }
 
 /* ---- menu desktop ---- */
@@ -413,6 +413,14 @@ footer ul {
 
 footer ul li {
     padding: 1rem;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+footer ul a:hover {
+    text-decoration: underline;
 }
 
 footer p {

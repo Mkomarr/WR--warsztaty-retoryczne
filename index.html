@@ -7,27 +7,28 @@
     <title>Warsztaty Retoryczne \\\ Dominik Mazur</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
 <!-- top menu -->
     <div class="top-nav">
     <nav>
-        <img src="img/logo.png" class="WR-logo" alt="logo-WR">
+        <a id="top-logo" href=""><img src="img/logo.png" class="WR-logo" alt="logo-WR"></a>
         <div class="dropdown-icon">&#9776;</div>
-        <ul class="top-menu">
-            <li><a href="">kursy</a></li>
-            <li><a href="">kontakt</a></li>
-            <li><a href="">fb</a></li>
-            <li><a href="">li</a></li>
-            <li><a href="">tt</a></li>
+         <ul class="top-menu">
+            <li><a id="kursy-nav" href="">kursy</a></li>
+            <li><a id="kontakt-nav" href="">kontakt</a></li>
+            <li><a href="https://www.facebook.com/warsztatyretoryczne/" target="_blank">fb</a></li>
+            <li><a href="https://www.linkedin.com/in/dominik-mazur-4a077bb3/" target="_blank">li</a></li>
+            <li><a href="https://twitter.com/MazurDK" target="_blank">tt</a></li>
             <li><div class="line"></div></li>
-        </ul>
+         </ul>
     </nav>
     <hr class="hr">
     </div>
 <!-- first section -->
-    <header>
+    <header id="top">
         <h1>Powiedz to <br />bardziej</h1>
         <div class="img-right say-it"></div>
     </header>
@@ -78,7 +79,7 @@
             <button class="button"><span>zapisz </span><span>>></span></button>
     </article>
 <!-- to whome -->
-    <article class="for-everyone article-set">
+    <article class="for-everyone article-set" id="kursy">
         <h2>Dla kogo?</h2>
         <img src="img/warsztaty-retoryczne-dla-wszystkich.png" class="mobile-hidden">
         <h3>\\\ dla firm</h3>
@@ -138,7 +139,7 @@
             <span>>></span></button>
     </section>
 <!-- kontakt -->
-    <article class="article-set">
+    <article class="article-set" id="kontakt">
         <section class="address">
             <h2>Kontakt</h2>
             <p>\ +48 889 073 582 <br />
@@ -169,9 +170,9 @@
             <li>kontakt</li>
         </ul>
         <ul>
-            <li>fb</li>
-            <li>li</li>
-            <li>tt</li>
+            <li><a href="https://www.facebook.com/warsztatyretoryczne/" target="_blank">fb</a></li>
+            <li><a href="https://www.linkedin.com/in/dominik-mazur-4a077bb3/" target="_blank">li</a></li>
+            <li><a href="https://twitter.com/MazurDK" target="_blank">tt</a></li>
         </ul>
         <p>Copyright © 2019 Warsztaty Retoryczne Dominik Mazur</p>
     </footer>
