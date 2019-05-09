@@ -446,6 +446,13 @@ footer p {
 @media (min-width: 600px) {
 .hr {
     width: 93%;
+    max-width: 75rem;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    padding-left: .7rem;
 }
 }
 
@@ -481,10 +488,32 @@ footer p {
 
 /* ---- header ---- */
 
-    #top h1 {
-        display: block;
-        font-size: 4rem;
-        line-height: 5rem;
+    header {
+        margin: 6rem auto 0;
+        width: 95%;
+        max-width: 75rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 {
+        grid-column: 1 / span 8;
+        font-size: 5.5rem;
+        line-height: 6rem;
+        padding: 35% 0;
+        top: 0;
+        left: 0;
+    }
+
+    .say-it {
+        width: 100%;
+        height: 34rem;
+        grid-column: 7 / 13;
+        background: right / contain no-repeat url("img/powiedz-to-bardziej-warsztaty-retoryczne-dominik-mazur-big.png");
+        /* align-self: flex-start; */
     }
 
 /* ---- all images ---- */
@@ -501,7 +530,7 @@ footer p {
 
 /* ----- workshop ----- */
 
-#top, nav {
+nav {
     max-width: 75rem;
     margin-right: auto;
     margin-left: auto;
@@ -530,7 +559,7 @@ footer p {
 }
 
 .img-about {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 5;
     grid-row: 2 / 4;
 }
 .p-about {
@@ -637,7 +666,7 @@ footer p {
 }
 
 .img-what {
-    grid-column: 8 / 13;
+    grid-column: 7 / 13;
     grid-row: 2 / 4;
 }
 
@@ -761,27 +790,30 @@ footer p {
 
 /* ----- footer ----- */
 
-footer {
+.footer-desktop {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 2rem;
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-footer ul li {
+.footer-desktop ul li {
     display: inline-block;
 }
-footer ul li:last-child {
+.footer-desktop ul li:last-child {
     padding: 1rem 0 1rem 1rem;
 }
 
-footer ul a {
+.footer-desktop ul a {
     font-size: .8rem;
 }
 
-footer p {
+.footer-desktop p {
     width: 100%;
 }
 
@@ -793,6 +825,15 @@ footer p {
     .hr {
         width: 96%;
      }
+
+     header {
+        margin: 8rem auto 0;
+    }
+
+    header h1 {
+        padding: 20% 0;
+
+    }
 
     }
 
