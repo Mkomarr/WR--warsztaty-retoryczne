@@ -433,10 +433,36 @@ footer p {
     padding-bottom: 1rem;
 }
 
+.logo-inverse {
+    max-width: 120px;
+}
+
+.copyright {
+    text-align: center;
+}
+
 /* ---- polityka prywatnosci ---- */
 
 .pp {
     padding: 1.5rem;
+}
+
+.pp-container {
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+.pp h3 {
+    text-decoration: underline;
+}
+
+.pp a {
+    color: #000033;
+}
+
+.pp a:hover {
+    background-color: #000033;
+    color: white;
 }
 
 /* -------- MEDIA QUERIES --------- */
@@ -817,6 +843,10 @@ nav {
     width: 100%;
 }
 
+.copyright {
+    text-align: right;
+}
+
 }
 
 /*  ------- desktops ------- */
@@ -842,3 +872,5 @@ nav {
         padding: 2.5rem 0;
     }
     }
+
+/* ----- polityka prywatności */
