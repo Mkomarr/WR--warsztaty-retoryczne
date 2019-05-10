@@ -313,6 +313,7 @@ h3 {
 
 .offer {
     margin-top: 4rem;
+    position: relative;
 }
 
 .offer ul {
@@ -324,19 +325,29 @@ h3 {
     margin: 0 0 0 1rem;;
 }
 
-.offer ul a {
-    color: #000033;
-    text-decoration: none;
-}
-
-.offer ul a:hover {
+.offer ul li.collapse:hover {
     color: white;
     background-color: #000033;
+    max-width: 15rem;
 }
 
 .offer img {
     max-width: 550px;
 }
+/* ----- details ----- */
+
+.collapsible {
+    background-color: white;
+    padding: 0 0 1rem 1rem;
+    display: none;
+    overflow: hidden;
+}
+
+.collapse-visible {
+    display: block;
+}
+
+/*  ----- sign in ----- */
 
 .sign-in {
     margin: 2rem 0 0;

@@ -54,4 +54,14 @@ $().ready (function () {
 
 });
 
+/* --- collapsible ----*/
+
+const collapse = document.querySelector('.basic-details');
+
+const showCollapse = () => {
+	collapse.addEventListener('click', () => console.log('działa'));
+}
+
+showCollapse();
+
 
