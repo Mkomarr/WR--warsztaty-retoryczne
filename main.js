@@ -56,12 +56,12 @@ $().ready (function () {
 
 /* --- collapsible ----*/
 
-const collapse = document.querySelector('.basic-details');
+const collapse = document.querySelector('.li-basic');
+const basicDetails = document.querySelector('.basic-details');
 
-const showCollapse = () => {
-	collapse.addEventListener('click', () => console.log('działa'));
+const showBasicDetails = () => {
+	basicDetails.classList.toggle('collapse-visible');
 }
-
-showCollapse();
+collapse.addEventListener('click', showBasicDetails);
 
 

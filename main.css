@@ -325,10 +325,14 @@ h3 {
     margin: 0 0 0 1rem;;
 }
 
-.offer ul li.collapse:hover {
+.offer ul li.collapse {
+    max-width: 15rem;
+}
+
+.offer ul li.collapse:hover,
+.offer ul li.collapse:active {
     color: white;
     background-color: #000033;
-    max-width: 15rem;
 }
 
 .offer img {
@@ -336,7 +340,7 @@ h3 {
 }
 /* ----- details ----- */
 
-.collapsible {
+.basic-details {
     background-color: white;
     padding: 0 0 1rem 1rem;
     display: none;
