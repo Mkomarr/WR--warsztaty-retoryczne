@@ -49,13 +49,49 @@ $().ready (function () {
 		$("html, body").animate({
 			scrollTop: goTop
 		}, 500);
-    });
+	});
 
+	//btn see-courses
+	$('#see-courses-1').click (function (event){
+		event.preventDefault();
+		let goTop = $('#kursy').offset().top-150;
+		$("html, body").animate({
+			scrollTop: goTop
+		}, 500);
+	});
+
+	//btn contact-us
+	$('#contact-us').click (function (event){
+		event.preventDefault();
+		let goTop = $('#kontakt').offset().top-150;
+		$("html, body").animate({
+			scrollTop: goTop
+		}, 500);
+	});
+
+	//sign-in offer
+	$('#sign-in-link').click (function (event){
+		event.preventDefault();
+		let goTop = $('#kontakt').offset().top-150;
+		$("html, body").animate({
+			scrollTop: goTop
+		}, 500);
+	});
+
+	//btn see-courses-2
+	$('#see-courses-2').click (function (event){
+		event.preventDefault();
+		let goTop = $('#kursy').offset().top-150;
+		$("html, body").animate({
+			scrollTop: goTop
+		}, 500);
+	});
 
 });
 
 /* --- collapsible ----*/
 
+// basic
 const collapse = document.querySelector('.li-basic');
 const basicDetails = document.querySelector('.basic-details');
 
@@ -64,4 +100,38 @@ const showBasicDetails = () => {
 }
 collapse.addEventListener('click', showBasicDetails);
 
+// advanced
+const advancedBtn = document.querySelector('.li-advanced');
+const advancedDetails = document.querySelector('.advanced-details');
 
+const showAdvDetails = () => {
+	advancedDetails.classList.toggle('collapse-visible');
+}
+advancedBtn.addEventListener('click', showAdvDetails);
+
+//for-companies
+const compBtn = document.querySelector('.li-companies');
+const forCompaniesDetails = document.querySelector('.for-companies');
+
+const showCompDetails = () => {
+	forCompaniesDetails.classList.toggle('collapse-visible');
+}
+compBtn.addEventListener('click', showCompDetails);
+
+// for IT
+const ItBtn = document.querySelector('.li-IT');
+const ItDetails = document.querySelector('.IT-details');
+
+const showItDetails = () => {
+	ItDetails.classList.toggle('collapse-visible');
+}
+ItBtn.addEventListener('click', showItDetails);
+
+// one-to-one
+const oneToOneBtn = document.querySelector('.li-one-to-one');
+const oneToOneDetails = document.querySelector('.one-to-one');
+
+const showOneToOneDetails = () => {
+	oneToOneDetails.classList.toggle('collapse-visible');
+}
+oneToOneBtn.addEventListener('click', showOneToOneDetails);

@@ -326,7 +326,7 @@ h3 {
 }
 
 .offer ul li.collapse {
-    max-width: 15rem;
+    max-width: 20rem;
 }
 
 .offer ul li.collapse:hover,
@@ -340,11 +340,22 @@ h3 {
 }
 /* ----- details ----- */
 
-.basic-details {
-    background-color: white;
+.basic-details,
+.advanced-details,
+.for-companies,
+.IT-details,
+.one-to-one {
     padding: 0 0 1rem 1rem;
     display: none;
     overflow: hidden;
+}
+
+.basic-details,
+.advanced-details,
+.for-companies,
+.IT-details,
+.one-to-one p {
+    margin-top: 2rem;
 }
 
 .collapse-visible {
