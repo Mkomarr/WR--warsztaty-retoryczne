@@ -135,3 +135,8 @@ const showOneToOneDetails = () => {
 	oneToOneDetails.classList.toggle('collapse-visible');
 }
 oneToOneBtn.addEventListener('click', showOneToOneDetails);
+
+/* ---- testimonial slider ---- */
+const carousel = document.querySelector('.carousel');
+const leftArrow = document
+

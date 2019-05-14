@@ -394,31 +394,28 @@ h3 {
 .testimonials h2 {
     width: 100%;
     text-align: left;
+    left: 0;
 }
 
-.testimonials::before {
-    content: "<";
+.left-arrow,
+.right-arrow {
     position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    padding: .5rem;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: #000033;
+    color: white;
+    padding: .5rem;
+}
+
+.left-arrow {
     left: -.5rem;
 }
-
-.testimonials::after {
-    content: ">";
-    position: absolute;
+.right-arrow {
     right: -.5rem;
-}
-
-.testimonials::before,
-.testimonials::after {
-    background-color: whitesmoke;
-    padding: .5rem;
-    font-size: 2rem;
-}
-.testimonials::before:hover,
-.testimonials::after:hover {
-    background-color: #000033;
-    padding: .5rem;
-    color: white;
 }
 
 .slider {
@@ -432,6 +429,7 @@ h3 {
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 500%;
+    /* transform: translate(-50%); */
 }
 
 .testimonial {
