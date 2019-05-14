@@ -386,7 +386,7 @@ h3 {
 .testimonials {
     display: flex;
     flex-direction: row;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     align-items: center;
     position: relative;
 }
@@ -403,6 +403,7 @@ h3 {
     top: 50%;
     font-size: 2rem;
     padding: .5rem;
+    z-index: 50;
 }
 .left-arrow:hover,
 .right-arrow:hover {
@@ -428,13 +429,18 @@ h3 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    width: 500%;
-    /* transform: translate(-50%); */
+    width: 1000%;
+    transition: all 300ms ease-in-out;
 }
 
 .testimonial {
     max-width: 87vw;
     padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.short-testimonial {
+    /* padding-top: 20%; */
 }
 
 /* --------- contact ------------ */
@@ -881,6 +887,18 @@ nav {
 
 .arrow-offer {
     grid-column: 5 / 7;
+}
+
+/* ----- testimonials ----- */
+
+.testimonial {
+    margin: 0;
+    width: 90vw;
+    max-width: 75rem;
+}
+
+.testimonial img {
+    max-width: 400px;
 }
 
 /* ----- contact ----- */

@@ -137,6 +137,19 @@ const showOneToOneDetails = () => {
 oneToOneBtn.addEventListener('click', showOneToOneDetails);
 
 /* ---- testimonial slider ---- */
+
 const carousel = document.querySelector('.carousel');
-const leftArrow = document
+const leftArrow = document.querySelector('.left-arrow')
+const rightArrow = document.querySelector('.right-arrow')
+
+let sectionIndex = 0;
+
+rightArrow.addEventListener('click', function() {
+	sectionIndex = (sectionIndex < 9) ? sectionIndex + 1 : 0;
+	carousel.style.transform = 'translate(' + (sectionIndex) * -10 + '%)';
+})
+leftArrow.addEventListener('click', function() {
+	sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 9;
+	carousel.style.transform = 'translate(' + (sectionIndex) * -10 + '%)';
+})
 
