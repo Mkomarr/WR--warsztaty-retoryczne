@@ -326,7 +326,9 @@ h3 {
 }
 
 .offer ul li.collapse {
-    max-width: 20rem;
+    max-width: 16.5rem;
+    position: relative;
+    padding: 0 .5rem;
 }
 
 .offer ul li.collapse:hover,
@@ -335,8 +337,19 @@ h3 {
     background-color: #000033;
 }
 
+.offer ul li.collapse::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    padding: 0 .5rem;
+}
+
 .offer img {
     max-width: 550px;
+}
+
+.offer ul li.ul-short-li {
+    max-width: 17.5rem;
 }
 /* ----- details ----- */
 

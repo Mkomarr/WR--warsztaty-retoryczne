@@ -34,6 +34,13 @@ $().ready (function () {
 			scrollTop: goTop
 		}, 500);
     });
+	$('#opinions-nav').click (function (event){
+		event.preventDefault();
+		let goTop = $('#opinions').offset().top-150;
+		$("html, body").animate({
+			scrollTop: goTop
+		}, 500);
+    });
 
 	$('#kontakt-nav').click (function (event){
 		event.preventDefault();
