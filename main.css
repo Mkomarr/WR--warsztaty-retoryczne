@@ -18,6 +18,18 @@ body img.arrow {
     height: 11px;
 }
 
+body a {
+    color: #000033;
+    text-decoration: none;
+    padding: .5rem;
+    margin-left: -.5rem;
+}
+
+body a:hover {
+    color: white;
+    background-color: #000033;
+}
+
 /*--------------- MOBILE FIRST -------------------*/
 
 .container {
@@ -107,14 +119,11 @@ nav {
 }
 
  .top-menu a {
-    text-decoration: none;
-    color: #000033;
     display: inline-block;
 }
 
-.top-menu a:hover {
-    background-color: #000033;
-    color: white;
+ .top-nav a.no-hover:hover {
+    background-color: white;
 }
 
 .hr {
@@ -384,15 +393,6 @@ h3 {
     justify-content: space-between;
 }
 
-.sign-in a {
-    color: #000033;
-}
-
-.sign-in a:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #000033;
-}
 
 /* ----- testimonials -------- */
 
@@ -460,11 +460,6 @@ h3 {
 
 .address {
     margin-bottom: 4em;
-}
-
-.address a {
-    text-decoration: none;
-    color: #000033;
 }
 
 .form input, textarea {
@@ -555,15 +550,6 @@ footer p {
 
 .pp h3 {
     text-decoration: underline;
-}
-
-.pp a {
-    color: #000033;
-}
-
-.pp a:hover {
-    background-color: #000033;
-    color: white;
 }
 
 /* -------- MEDIA QUERIES --------- */
