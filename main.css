@@ -381,7 +381,65 @@ h3 {
     background-color: #000033;
 }
 
-/* --------- contact ---------------- */
+/* ----- testimonials -------- */
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6rem;
+    align-items: center;
+    position: relative;
+}
+
+.testimonials h2 {
+    width: 100%;
+    text-align: left;
+}
+
+.testimonials::before {
+    content: "<";
+    position: absolute;
+    left: -.5rem;
+}
+
+.testimonials::after {
+    content: ">";
+    position: absolute;
+    right: -.5rem;
+}
+
+.testimonials::before,
+.testimonials::after {
+    background-color: whitesmoke;
+    padding: .5rem;
+    font-size: 2rem;
+}
+.testimonials::before:hover,
+.testimonials::after:hover {
+    background-color: #000033;
+    padding: .5rem;
+    color: white;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 500%;
+}
+
+.testimonial {
+    max-width: 87vw;
+    padding: 0 3rem;
+}
+
+/* --------- contact ------------ */
 
 .address {
     margin-bottom: 4em;
