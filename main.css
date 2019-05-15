@@ -288,7 +288,6 @@ h3 {
     background-color: #1f1f4b;
     padding: .5rem 0;
     color: white;
-    font-size: 1.3rem;
     border-bottom: 1px solid white;
 }
 
@@ -330,12 +329,16 @@ h3 {
     list-style-type: none;
 }
 
+.offer ul li.li-header {
+    font-size: 1.2rem;
+}
+
 .offer ul .group-lvls {
-    margin: 0 0 0 1rem;;
+    margin: .5rem 0 1rem 1rem;
 }
 
 .offer ul li.collapse {
-    max-width: 16.5rem;
+    max-width: 20rem;
     position: relative;
     padding: 0 .5rem;
 }
@@ -358,7 +361,7 @@ h3 {
 }
 
 .offer ul li.ul-short-li {
-    max-width: 17.5rem;
+    max-width: 21rem;
 }
 /* ----- details ----- */
 
@@ -380,6 +383,10 @@ h3 {
     margin-top: 2rem;
 }
 
+.basic-details p {
+    margin-bottom: 1rem;
+}
+
 .collapse-visible {
     display: block;
 }
@@ -399,7 +406,6 @@ h3 {
 .testimonials {
     display: flex;
     flex-direction: row;
-    margin-bottom: 4rem;
     align-items: center;
     position: relative;
 }
@@ -450,10 +456,6 @@ h3 {
     max-width: 87vw;
     padding: 0 3rem;
     margin: 0 auto;
-}
-
-.short-testimonial {
-    /* padding-top: 20%; */
 }
 
 /* --------- contact ------------ */
@@ -525,7 +527,7 @@ footer ul a:hover {
 }
 
 footer p {
-    font-size: .6rem;
+    font-size: .8rem;
     padding-bottom: 1rem;
 }
 
@@ -566,6 +568,10 @@ header h1 {
     font-size: 4.5rem;
     line-height: 5rem;
     padding-left: .7rem;
+}
+
+footer p {
+    font-size: 1rem;
 }
 }
 
@@ -666,9 +672,10 @@ nav {
 }
 
 .wr-calendar {
-    grid-column: 10 / 13;
+    grid-column: 11 / 13;
     grid-row: 1;
     font-size: .8rem;
+    text-align: right;
 }
 
 .img-about {
@@ -688,7 +695,7 @@ nav {
 
 .workshop-content, .newsletter-desktop, .sign-in {
     width: 100%;
-    max-width: 70rem;
+    max-width: 75rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 24px;
@@ -697,6 +704,11 @@ nav {
     text-align: left;
     margin: 0 auto;
 }
+
+.newsletter-desktop {
+    padding: 2.7rem 0;
+}
+
 .recent-courses {
     grid-column: 1 / 8;
     grid-row: 1;
@@ -757,7 +769,7 @@ nav {
 }
 
 .contact-us-breadcrumb {
-    grid-column: 1 / 6;
+    grid-column: 1 / 8;
     grid-row: 7;
 }
 
@@ -859,7 +871,8 @@ nav {
 
 .img-offer {
     grid-column: 7 / 13;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
+    align-self: flex-start;
 }
 
 .sign-in {
@@ -892,6 +905,7 @@ nav {
 
 .testimonials {
     display: flex;
+    margin: 0 auto 8rem auto;
 }
 
 .testimonial {
@@ -948,11 +962,19 @@ nav {
     margin: 0 auto;
 }
 
+.footer-desktop img {
+    margin: 1rem 0 0;
+}
+
+.footer-desktop ul {
+    margin-top: .7rem;
+}
+
 .footer-desktop ul li {
     display: inline-block;
 }
 .footer-desktop ul li:last-child {
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 0 1rem;
 }
 
 .footer-desktop ul a {
@@ -961,6 +983,7 @@ nav {
 
 .footer-desktop p {
     width: 100%;
+    font-size: .8rem;
 }
 
 .copyright {

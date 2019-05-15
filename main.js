@@ -29,7 +29,7 @@ $().ready (function () {
 
 	$('#kursy-nav').click (function (event){
 		event.preventDefault();
-		let goTop = $('#kursy').offset().top-150;
+		let goTop = $('#offer').offset().top-150;
 		$("html, body").animate({
 			scrollTop: goTop
 		}, 500);
@@ -89,6 +89,15 @@ $().ready (function () {
 	$('#see-courses-2').click (function (event){
 		event.preventDefault();
 		let goTop = $('#kursy').offset().top-150;
+		$("html, body").animate({
+			scrollTop: goTop
+		}, 500);
+	});
+
+	//link najbliższe kursy
+	$('#see-courses-3').click (function (event){
+		event.preventDefault();
+		let goTop = $('#offer').offset().top-150;
 		$("html, body").animate({
 			scrollTop: goTop
 		}, 500);
