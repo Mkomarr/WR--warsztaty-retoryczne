@@ -283,6 +283,11 @@ h3 {
 
 /* --------- newsletter ---------------- */
 
+/* ---- tymczasowe ukrycie ---- */
+.newsletter-desktop {
+    display: none;
+}
+
 .newsletter {
     border: none;
     background-color: #1f1f4b;
@@ -465,6 +470,12 @@ h3 {
     margin-top: 6rem;
 }
 
+/* --- tymczasowe ukrycie formularza */
+
+.form {
+    display: none;
+}
+
 .form input, textarea {
     display: flex;
     justify-content: center;
@@ -574,6 +585,7 @@ header h1 {
 footer p {
     font-size: 1rem;
 }
+
 }
 
 @media (min-width: 900px) {
@@ -704,6 +716,11 @@ nav {
     justify-content: space-around;
     text-align: left;
     margin: 0 auto;
+}
+
+/* ---- tymczasowe ukrycie ---- */
+.newsletter-desktop {
+    display: none;
 }
 
 .newsletter-desktop {
