@@ -1,0 +1,1027 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1rem/1.7rem 'Montserrat', sans-serif;
+  }
+
+body {
+    color: #000033;
+}
+
+body img {
+    width: 100%;
+}
+
+body img.arrow {
+    max-width: 94px;
+    height: 11px;
+}
+
+body a {
+    color: #000033;
+    text-decoration: none;
+    padding: .5rem;
+    margin-left: -.5rem;
+}
+
+body a:hover {
+    color: white;
+    background-color: #000033;
+}
+
+/*--------------- MOBILE FIRST -------------------*/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* display: grid; */
+    /* overflow: hidden; */
+    /* grid-gap: 24px; */
+    /* grid-template-columns: repeat(12, 1fr); */
+}
+
+/*-------------- menu ---------------------*/
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+nav {
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.WR-logo {
+    max-width: 120px;
+    position: relative;
+    z-index: 99;
+}
+
+/* ---- menu mobile ---- */
+
+.dropdown-icon {
+    font-size: 2em;
+    display: block;
+}
+
+.top-menu {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 4em;
+    left: 0;
+    background-color: white;
+    font-size: 1.3rem;
+    transition: 200ms ease-in;
+    opacity: 0;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.top-menu ul {
+    list-style: none;
+    align-items: center;
+}
+
+.top-menu li {
+    padding: 1rem;
+    text-align: center;
+}
+
+.top-menu li:first-child {
+    padding-top: 2.5rem;
+}
+
+.line {
+    width: 98%;
+    height: 2px;
+    background-color: #000033;
+    margin: 0 auto;
+}
+
+.top-menu li:last-child {
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+}
+
+ .top-menu a {
+    display: inline-block;
+}
+
+ .top-nav a.no-hover:hover {
+    background-color: white;
+}
+
+.hr {
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #000033;
+ }
+
+/*------------------ BODY -----------------*/
+
+main {
+    margin: 0 auto;
+}
+
+/* ---------about----------------- */
+
+header {
+    margin-top: 8em;
+    width: 95%;
+    position: relative;
+}
+
+.img-right {
+    /* width: 80%; */
+    height: 18em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.say-it {
+    background: right / contain no-repeat url("img/powiedz-to-bardziej-warsztaty-retoryczne-dominik-mazur.png");
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 5rem;
+    left: 1.3rem;
+}
+
+/* dodatkowy styl dla hr */
+
+.section {
+    margin: 5rem auto;
+}
+
+/* ----------------retoryka to warsztat----------- */
+
+.article-set {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wr-workshop {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.3rem;
+    line-height: 1.2em;
+    padding-bottom: 3rem;
+}
+
+.wr-workshop img {
+    max-width: 409px;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+/* ---------------- workshop ------------------- */
+
+.workshop {
+    width: 100%;
+    margin: 4rem 0;
+    background-color: #000033;
+    color: white;
+}
+
+.workshop-content {
+    padding: 2.5rem 1.5rem;
+}
+
+.newsletter-desktop {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.7rem 1.5rem;
+    font-size: 1.4rem;
+}
+
+.button {
+    margin: 2rem auto 0 auto;
+    background-color: #000033;
+    font-size: 1.3rem;
+    color: white;
+    border: 1px solid white;
+    padding: .4em 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:white;
+    color: #000033;
+}
+.button:active {
+    background-color: whitesmoke;
+    color: #000033;
+}
+
+
+/* ----------------- why --------------------- */
+
+h3 {
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.why img {
+    max-width: 319px;
+}
+
+.contact-us-breadcrumb {
+    margin: 2rem 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us-breadcrumb a {
+    text-decoration: none;
+    color: #000033;
+}
+
+.contact-us-breadcrumb a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #000033;
+}
+
+/* ---------------- what -------------------- */
+
+.what img {
+    max-width: 550px;
+}
+
+/* --------- newsletter ---------------- */
+
+.newsletter {
+    border: none;
+    background-color: #1f1f4b;
+    padding: .5rem 0;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.newsletter::placeholder {
+    color: white;
+}
+
+/* ---------------for everyone--------------- */
+
+.for-everyone img {
+    max-width: 408px;
+}
+
+.for-everyone ul {
+    list-style-type: none;
+    margin-left: 2rem;
+}
+
+.for-everyone li {
+    padding-left: 1em;
+    display: block;
+}
+
+.for-everyone ul > li:before {
+    content: "\005C";
+    margin: 0 .6em 0 -1em;
+    /* text-indent: 2em each-line; */
+}
+
+/* ----------- offer ------------------ */
+
+.offer {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.offer ul {
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+.offer ul li.li-header {
+    font-size: 1.2rem;
+}
+
+.offer ul .group-lvls {
+    margin: .5rem 0 1rem 1rem;
+}
+
+.offer ul li.collapse {
+    max-width: 20rem;
+    position: relative;
+    padding: 0 .5rem;
+}
+
+.offer ul li.collapse:hover,
+.offer ul li.collapse:active {
+    color: white;
+    background-color: #000033;
+}
+
+.offer ul li.collapse::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    padding: 0 .5rem;
+}
+
+.offer img {
+    max-width: 550px;
+}
+
+.offer ul li.ul-short-li {
+    max-width: 21rem;
+}
+/* ----- details ----- */
+
+.basic-details,
+.advanced-details,
+.for-companies,
+.IT-details,
+.one-to-one {
+    padding: 0 0 1rem 1rem;
+    display: none;
+    overflow: hidden;
+}
+
+.basic-details,
+.advanced-details,
+.for-companies,
+.IT-details,
+.one-to-one p {
+    margin-top: 2rem;
+}
+
+.basic-details p {
+    margin-bottom: 1rem;
+}
+
+.collapse-visible {
+    display: block;
+}
+
+/*  ----- sign in ----- */
+
+.sign-in {
+    margin: 2rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ----- testimonials -------- */
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.testimonials h2 {
+    width: 100%;
+    text-align: left;
+    left: 0;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    padding: .5rem;
+    z-index: 50;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: #000033;
+    color: white;
+    padding: .5rem;
+}
+
+.left-arrow {
+    left: -.5rem;
+}
+.right-arrow {
+    right: -.5rem;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 1000%;
+    transition: all 300ms ease-in-out;
+}
+
+.testimonial {
+    max-width: 87vw;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+/* --------- contact ------------ */
+
+.address {
+    margin-bottom: 4em;
+    margin-top: 6rem;
+}
+
+.form input, textarea {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-bottom: 1px solid #000033;
+    background-color: #e4e4fa;
+    width: 100%;
+    padding: .5rem 0 .2rem 0;
+    margin-bottom: .8rem;
+}
+
+.form input::placeholder, textarea::placeholder {
+    color: #000033;
+}
+
+.send {
+    width: 100%;
+    background-color: #000033;
+    color: white;
+    border: 1px solid #000033;
+    padding: .8em 0;
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: white;
+    color: #000033;
+    border: 1px solid #000033;
+}
+
+/* ---------- footer ---------------- */
+
+footer {
+    width: 100%;
+    margin-top: 4rem;
+    background-color: #000033;
+    color: white;
+    text-align: center;
+}
+
+footer img {
+    margin: 2rem 0;
+    max-width: 150px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline;
+}
+
+footer ul li {
+    padding: 1rem;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+footer ul a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: .8rem;
+    padding-bottom: 1rem;
+}
+
+.logo-inverse {
+    max-width: 120px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* ---- polityka prywatnosci ---- */
+
+.pp {
+    padding: 1.5rem;
+}
+
+.pp-container {
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+.pp h3 {
+    text-decoration: underline;
+}
+
+/* -------- MEDIA QUERIES --------- */
+
+/* ----- tablets ----- */
+
+@media (min-width: 600px) {
+.hr {
+    width: 93%;
+    max-width: 75rem;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    padding-left: .7rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+}
+
+@media (min-width: 900px) {
+
+/* ---- menu ---- */
+
+    .dropdown-icon {
+        visibility: hidden;
+    }
+
+    ul.top-menu {
+        visibility: visible;
+        opacity: 1;
+        top: .6rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.top-menu li,
+    ul.top-menu li:first-child {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    ul.top-menu li:nth-child(4) {
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .hr {
+        width: 95%;
+    }
+
+/* ---- header ---- */
+
+    header {
+        margin: 6rem auto 0;
+        width: 95%;
+        max-width: 75rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 {
+        grid-column: 1 / span 8;
+        font-size: 5.5rem;
+        line-height: 6rem;
+        padding: 35% 0;
+        top: 0;
+        left: 0;
+    }
+
+    .say-it {
+        width: 100%;
+        height: 34rem;
+        grid-column: 7 / 13;
+        background: right / contain no-repeat url("img/powiedz-to-bardziej-warsztaty-retoryczne-dominik-mazur-big.png");
+        /* align-self: flex-start; */
+    }
+
+/* ---- all images ---- */
+
+    .mobile-hidden {
+        display: block;
+    }
+
+/* ---- about ----- */
+
+    .workshop-art {
+        display: grid;
+    }
+
+/* ----- workshop ----- */
+
+nav {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wr-workshop, .article-set {
+    max-width: 75rem;
+    margin: 4rem auto;
+}
+
+.wr-workshop, .why, .article-set {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 24px;
+    align-items: center;
+}
+.arrow-workshop {
+    grid-column: 7 / 10;
+}
+
+.wr-calendar {
+    grid-column: 11 / 13;
+    grid-row: 1;
+    font-size: .8rem;
+    text-align: right;
+}
+
+.img-about {
+    grid-column: 1 / span 5;
+    grid-row: 2 / 4;
+}
+.p-about {
+    grid-column: 7 / span 6;
+    grid-row: 3 / 4;
+}
+.h2-about {
+    grid-column: 7 / span 6;
+    grid-row: 2 / 3;
+}
+
+/* ---- workshop content ---- */
+
+.workshop-content, .newsletter-desktop, .sign-in {
+    width: 100%;
+    max-width: 75rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 24px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* ---- tymczasowe ukrycie ---- */
+.newsletter-desktop {
+    display: none;
+}
+
+.newsletter-desktop {
+    padding: 2.7rem 0;
+}
+
+.recent-courses {
+    grid-column: 1 / 8;
+    grid-row: 1;
+    font-size: 1.7rem;
+}
+
+.button-workshop {
+    grid-column: 9 / 13;
+    grid-row: 1;
+    max-width: 25rem;
+    margin: 0;
+}
+
+/* -------- why -------- */
+
+.why {
+    align-items: flex-start;
+}
+
+.h2-why {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.h3-why-1 {
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+.p-why-1 {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+
+.h3-why-2 {
+    grid-column: 1 / 4;
+    grid-row: 4;
+}
+
+.p-why-2 {
+    grid-column: 1 / 4;
+    grid-row: 5;
+}
+
+.h3-why-3 {
+    grid-column: 5 / 8;
+    grid-row: 2;
+}
+
+.p-why-3 {
+    grid-column: 5 / 8;
+    grid-row: 3 / 7;
+}
+
+.img-why {
+    grid-column: 9 / 13;
+    grid-row: 2 / 6;
+}
+
+.contact-us-breadcrumb {
+    grid-column: 1 / 8;
+    grid-row: 7;
+}
+
+/* ---- what ------ */
+
+.h2-what {
+    grid-column: 1 / 6;
+    grid-row: 1;
+}
+
+.h3-what {
+    grid-column: 1 / 6;
+    grid-row: 2;
+}
+
+.p-what {
+    grid-column: 1 / 7;
+    grid-row: 3;
+}
+
+.img-what {
+    grid-column: 7 / 13;
+    grid-row: 2 / 4;
+}
+
+/* ----- newsletter ----- */
+
+.input-newsl {
+    grid-column: 1 / 8;
+    grid-row: 1;
+}
+
+.button-newsletter {
+    grid-column: 9 / 13;
+    grid-row: 1;
+    margin: 0;
+}
+
+/* ---- to whom ----- */
+
+.h2-to-whom {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    padding: 0;
+}
+
+.img-to-whom {
+    grid-column: 1 / 6;
+    grid-row: 2 / 5;
+    align-self: flex-start;
+    padding: 5rem 0;
+}
+
+.h3-to-whom-1 {
+    grid-column: 7 / 13;
+    grid-row: 1;
+}
+
+.ul-to-whom-1 {
+    grid-column: 7 / 13;
+    grid-row: 2;
+}
+
+.h3-to-whom-2 {
+    grid-column: 7 / 13;
+    grid-row: 3;
+}
+
+.ul-to-whom-2 {
+    grid-column: 7 / 13;
+    grid-row: 4;
+}
+.h3-to-whom-3 {
+    grid-column: 7 / 13;
+    grid-row: 5;
+}
+.ul-to-whom-3 {
+    grid-column: 7 / 13;
+    grid-row: 6;
+}
+
+/* ----- offer ------ */
+
+.offer {
+    margin-top: 7rem;
+}
+
+.h2-offer {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    align-self: flex-start;
+}
+
+.ul-offer {
+    grid-column: 1 / 6;
+    grid-row: 2 / 4;
+    align-self: flex-start;
+}
+
+.img-offer {
+    grid-column: 7 / 13;
+    grid-row: 1 / 5;
+    align-self: flex-start;
+}
+
+.sign-in {
+    grid-column: 1 / 13;
+    grid-row: 4;
+    margin: 2rem -.5rem;
+}
+
+.p-offer {
+    grid-column: 1 / 5;
+}
+
+.p-offer a {
+    font-size: 1.4rem;
+    color: #000033;
+    padding: .5rem;
+}
+.p-offer a:hover {
+    font-size: 1.4rem;
+    color: white;
+    background-color: #000033;
+    padding: .5rem;
+}
+
+.arrow-offer {
+    grid-column: 5 / 7;
+}
+
+/* ----- testimonials ----- */
+
+.testimonials {
+    display: flex;
+    margin: 0 auto 8rem auto;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    width: 90vw;
+    max-width: 75rem;
+}
+
+.testimonial h3 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+}
+
+.testimonial p {
+    grid-column: 1;
+    grid-row: 2;
+    padding-right: 1rem;
+}
+
+.testimonial img {
+    max-width: 400px;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    justify-self: center;
+}
+
+/* ----- contact ----- */
+
+.address {
+    grid-column: 1 / 7;
+    grid-row: 1 / 3;
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.form {
+    grid-column: 7 / 13;
+    grid-row: 1 / 3;
+}
+
+/* ----- footer ----- */
+
+.footer-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-desktop img {
+    margin: 1rem 0 0;
+}
+
+.footer-desktop ul {
+    margin-top: .7rem;
+}
+
+.footer-desktop ul li {
+    display: inline-block;
+}
+.footer-desktop ul li:last-child {
+    padding: 1rem 0 0 1rem;
+}
+
+.footer-desktop ul a {
+    font-size: .8rem;
+}
+
+.footer-desktop p {
+    width: 100%;
+    font-size: .8rem;
+}
+
+.copyright {
+    text-align: right;
+}
+
+}
+
+/*  ------- desktops ------- */
+
+@media (min-width: 1100px) {
+    .hr {
+        width: 96%;
+     }
+
+     header {
+        margin: 8rem auto 0;
+    }
+
+    header h1 {
+        padding: 20% 0;
+
+    }
+
+    }
+
+@media (min-width: 1200px) {
+    .workshop-content {
+        padding: 2.5rem 0;
+    }
+    }
+
+/* ----- polityka prywatności */
