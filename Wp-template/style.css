@@ -245,14 +245,31 @@ h2 {
 }
 
 .button:hover,
-.form input.button:hover {
+.form input.button:hover,
+.button-cookies:hover {
     background-color:white;
     color: #000033;
 }
 .button:active,
-.form input.button:active {
+.form input.button:active,
+.button-cookies:active {
     background-color: whitesmoke;
     color: #000033;
+}
+
+.cn-button {
+    margin-left: 50% !important;
+    transform: translateX(-50%);
+}
+
+.button-cookies {
+    display: block;
+    background-color: #000033;
+    font-size: .8rem;
+    color: white;
+    border: 1px solid white;
+    width: 30%;
+    cursor: pointer;
 }
 
 
