@@ -103,27 +103,27 @@
                 <li class="li-header"><?php echo $offer['warsztaty_retoryczne_w_grupie']; ?></li>
                  <ul class="group-lvls">
                     <li class="collapse li-basic li-header"><?php echo $offer['grupa_poczatkujaca_tytul']; ?></li>
-                        <span class="basic-details">
+                        <li class="basic-details">
                         <?php echo $offer['grupa_poczatkujaca_opis']; ?>
-                        </span>
+                        </li>
                     <li class="collapse li-advanced li-header"><?php echo $offer['grupa_zaawansowana']; ?></li>
-                        <span class="advanced-details">
+                        <li class="advanced-details">
                             <?php echo $offer['grupa_zaawansowana_tekst']; ?>
-                        </span>
+                        </li>
                     <!-- <li class="collapse">grupa otwarta</li> -->
                  </ul>
                 <li class="collapse li-companies ul-short-li li-header"><?php echo $offer['warsztaty_dla_firm']; ?></li>
-                    <span class="for-companies">
+                    <li class="for-companies">
                         <?php echo $offer['warsztaty_dla_firm_tekst']; ?>
-                    </span>
+                    </li>
                 <li class="collapse li-IT ul-short-li li-header"><?php echo $offer['warsztaty_dla_it']; ?></li>
-                    <span class="IT-details">
+                    <li class="IT-details">
                         <?php echo $offer['warsztaty_dla_it_tekst']; ?>
-                    </span>
+                    </li>
                 <li class="collapse li-one-to-one ul-short-li li-header"><?php echo $offer['warsztaty_indywidualne_tytul']; ?></li>
-                    <span class="one-to-one">
+                    <li class="one-to-one">
                         <?php echo $offer['warsztaty_indywidualne_tekst']; ?>
-                    </span>
+                    </li>
         </ul>
 <!-- details -->
 
